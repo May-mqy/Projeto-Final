@@ -1,0 +1,35 @@
+:root {
+      --azul-royal: #4169E1;
+      --amarelo-mostarda: #FFB400;
+      --cinza-escuro: #2F2F2F;
+      --branco-gelo: #F9F9F9;
+      --coral-vibrante: #FF6B6B;
+    }
+
+cabecalho {
+      margin: 10;
+      font-family: Arial, sans-serif;
+      background-color: var(--branco-gelo);
+      color: var(--cinza-escuro);
+    }
+
+    header {
+      background-color: var(--azul-royal);
+      color: var(--branco-gelo);
+      padding: 2rem;
+      text-align: center;
+    }
+
+     nav * {
+      background-color: var(--cinza-escuro);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      color: var(--branco-gelo);
+      text-decoration: none;
+      font-weight: bold;
+    }
