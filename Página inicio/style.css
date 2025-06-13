@@ -6,30 +6,52 @@
       --coral-vibrante: #FF6B6B;
     }
 
-cabecalho {
-      margin: 10;
-      font-family: Arial, sans-serif;
-      background-color: var(--branco-gelo);
-      color: var(--cinza-escuro);
-    }
+body {
+    background-color: #F9F9F9;
+}
 
-    header {
-      background-color: var(--azul-royal);
-      color: var(--branco-gelo);
-      padding: 2rem;
-      text-align: center;
-    }
+header #ParteCima {
+width: 1440px;
+height: 185px;
+flex-shrink: 0;
 
-     nav * {
-      background-color: var(--cinza-escuro);
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem 0;
-    }
+border: 1px solid #000;
+background: #4169E1;
+}
 
-    nav a {
-      color: var(--branco-gelo);
-      text-decoration: none;
-      font-weight: bold;
-    }
+#TitPrincipal {
+
+width: 548px;
+height: 92px;
+flex-shrink: 0;
+
+color: #F9F9F9;
+font-family: Kalnia;
+font-size: 64px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+#Frase {
+width: 995px;
+height: 55px;
+flex-shrink: 0;
+
+color: #121233;
+font-family: Kameron;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+#mulher {
+width: 456px;
+height: 438px;
+flex-shrink: 0;
+
+background: lightgray -176.184px 2px / 149.203% 100% no-repeat;
+border-radius: 106px;
+}
+
