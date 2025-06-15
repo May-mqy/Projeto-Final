@@ -4,54 +4,124 @@
       --cinza-escuro: #2F2F2F;
       --branco-gelo: #F9F9F9;
       --coral-vibrante: #FF6B6B;
+      --light-silver: #D9D9D9;
     }
 
 body {
-    background-color: #F9F9F9;
+    background-color:#D9D9D9;
+    margin: 0px;
 }
 
-header #ParteCima {
-width: 1440px;
-height: 185px;
-flex-shrink: 0;
+header #ParteCima { /*retangulo azul */
+    width: 1349px;
+    height: 185px;
 
-border: 1px solid #000;
+border: 1px solid #3b4c80;
 background: #4169E1;
 }
 
+
+
 #TitPrincipal {
 
-width: 548px;
-height: 92px;
-flex-shrink: 0;
+    width: 545px;
+    height: 22px;
+    margin: 47px;
 
 color: #F9F9F9;
 font-family: Kalnia;
 font-size: 64px;
-font-style: normal;
 font-weight: 500;
-line-height: normal;
 }
 
 #Frase {
-width: 995px;
-height: 55px;
-flex-shrink: 0;
+    width: 995px;
+    height: 155px;
+    flex-shrink: 0;
+    margin: 47px;
 
 color: #121233;
 font-family: Kameron;
 font-size: 40px;
-font-style: normal;
 font-weight: 400;
-line-height: normal;
 }
 
-#mulher {
-width: 456px;
-height: 438px;
-flex-shrink: 0;
-
-background: lightgray -176.184px 2px / 149.203% 100% no-repeat;
-border-radius: 106px;
+nav {
+    background-color: #b6b6b6;
+    border: 1px solid #979494;
+    padding: 15px;
 }
 
+nav a {
+    color:#000000;
+    display: inline;
+    margin: 15px;
+    padding: 20px;
+    
+
+color: #000;
+font-family: Kalnia;
+font-size: 25px;
+font-weight: 400;
+}
+
+#Acolhimento {
+    width: 530px;
+    height: 20px;
+    margin: 47px;
+
+    color: #FFB400;
+    font-family: Kalnia;
+    font-size: 55px;
+    font-weight: 500;
+}
+
+#mulher { /* imagem mulher */
+    width: 420px;
+    height: 350px;
+    margin-right: 34px;
+
+    position: absolute;
+    top: 300px;
+    right: 34px;
+
+border-radius:70px;
+}
+
+#homem { /*imagem homem */
+    width: 250px;
+    height: 350px;
+    margin-left: 47px;
+    border-radius: 45px;
+
+    position:absolute;
+    top: 360px;
+    
+}
+
+p { /* texto */ 
+    width: 520px;
+    margin: 47px;
+
+    position:absolute;
+    left: 280px;
+
+color: #000;
+font-family: Kameron;
+font-size: 32px;
+font-weight: 400;
+
+
+}
+
+footer {
+    margin-top: 500px; 
+    width: 1351px;
+    height: 120px;
+    border-top: 1px solid #a05656;
+    background: #FF6B6B;
+}
+
+footer p { /*rodapé */
+    text-align: center;
+}
