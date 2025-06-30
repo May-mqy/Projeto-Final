@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fios & Formas</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agendamento | Fios & Formas</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div id="interface">
@@ -23,11 +23,78 @@
     </nav>
 
     <main>
-      <!-- Conteúdo específico de cada página aqui -->
-    </main>
+      <h2 id="acolhimento">Agende Seu Horário</h2>
+      <p>
+        Escolha o serviço desejado e marque seu horário com facilidade. Estamos esperando por você!
+        <br />✨ Atendimento com hora marcada para sua comodidade.
+      </p>
+
+  
+  <form id="formAgendamento">
+    <label for="nome-agendamento">Nome:</label><br>
+    <input type="text" id="nome-agendamento" name="nome" required><br><br>
+
+    <label for="email-agendamento">E-mail:</label><br>
+    <input type="email" id="email-agendamento" name="email" required><br><br>
+
+    <label for="servico">Serviço:</label><br>
+    <select id="servico" name="servico" required>
+      <option value="">Selecione</option>
+      <option value="corte">Corte de cabelo</option>
+      <option value="barba">Barbearia</option>
+      <option value="hidratação">Hidratação</option>
+      <option value="sobrancelha">Sobrancelha</option>
+    </select><br><br>
+
+    <label for="data">Data do agendamento:</label><br>
+    <input type="date" id="data" name="data" required><br><br>
+
+    <button type="submit">Agendar</button>
+  </form>
+</main>
 
     <footer>
       <p>&copy; 2025 Salão Fios & Formas. Todos os direitos reservados.</p>
     </footer>
   </div>
+
+  <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const dados = JSON.parse(localStorage.getItem('dadosCadastro'));
+    if (dados) {
+      document.getElementById('nome-agendamento').value = dados.nome || '';
+      document.getElementById('email-agendamento').value = dados.email || '';
+    }
+  });
+
+  document.getElementById('formAgendamento').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    alert('Agendamento realizado com sucesso!');
+    // Aqui você pode enviar os dados para um servidor no futuro
+  });
+</script>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyC0e8-A5YRMC7UErsov5Sxz9skC4hH3TQo",
+    authDomain: "fioseformas-2025.firebaseapp.com",
+    databaseURL: "https://fioseformas-2025-default-rtdb.firebaseio.com",
+    projectId: "fioseformas-2025",
+    storageBucket: "fioseformas-2025.firebasestorage.app",
+    messagingSenderId: "428626006864",
+    appId: "1:428626006864:web:5cf06aaabb277be8f5d255"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
+
 </body>
+</html>
