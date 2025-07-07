@@ -10,7 +10,7 @@
   <div id="interface">
     <header id="cabecalho">
       <h1 id="tit-principal">Fios & Formas</h1>
-      <h2 id="frase">Aqui não fazemos só cabelo, criamos estilo.</h2>
+      <h2 id="fraseDigitada"></h2>
     </header>
 
     <nav>
@@ -35,5 +35,26 @@
       <p>&copy; 2025 Salão Fios & Formas. Todos os direitos reservados.</p>
     </footer>
   </div>
+
+  <script>
+  const texto = "Aqui não fazemos só cabelo, criamos estilo.";
+  const frase = document.getElementById("fraseDigitada");
+  let index = 0;
+
+  function escreverLetra() {
+    if (index < texto.length) {
+      frase.innerHTML += texto.charAt(index);
+      index++;
+      setTimeout(escreverLetra, 60); // velocidade da digitação
+    }
+  }
+
+  escreverLetra();
+
+  const nome = prompt("Qual o seu nome?");
+  alert("Seja bem-vindo(a), " + nome + " ao Fios & Formas!");
+</script>
+
+
 </body>
 </html>

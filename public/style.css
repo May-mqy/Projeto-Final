@@ -57,6 +57,12 @@ body {
   margin-top: 10px;
 }
 
+#fraseDigitada {
+  font-size: 32px;
+  margin-top: 10px;
+  animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
 nav {
   background-color: #b6b6b6;
   border-top: 1px solid #979494;
@@ -180,46 +186,70 @@ form button:hover {
 
 /*Serviços*/
 
- .servicos-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 40px;
-      gap: 30px;
-    }
+.servicos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+  gap: 40px 30px; /* espaço entre linhas e colunas */
+  max-width: 1100px;
+  margin: auto;
+}
 
-    .servico {
-      background-color: var(--branco-gelo);
-      border: 1px solid var(--light-silver);
-      border-radius: 25px;
-      width: 300px;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-      text-align: center;
-    }
+.servico {
+  background-color: var(--branco-gelo);
+  border: 1px solid var(--light-silver);
+  border-radius: 25px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
 
-    .servico:hover {
-      transform: scale(1.03);
-    }
+.servico:hover {
+  transform: scale(1.03);
+}
 
-    .servico img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 15px;
-      margin-bottom: 15px;
-    }
+.servico img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
 
-    .servico h3 {
-      font-family: Kalnia, sans-serif;
-      color: var(--azul-royal);
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
+.servico h3 {
+  font-family: Kalnia, sans-serif;
+  color: var(--azul-royal);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
 
-    .servico p {
-      font-family: Kameron, serif;
-      color: var(--cinza-escuro);
-      font-size: 16px;
-    }
+.servico p {
+  font-family: Kameron, serif;
+  color: var(--cinza-escuro);
+  font-size: 16px;
+}
+
+#voltarTopo {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: var(--azul-royal);
+  color: var(--branco-gelo);
+  border: none;
+  border-radius: 50px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-family: Kalnia;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: 0.3s ease-in-out;
+  display: none; /* esconde até rolar */
+}
+
+#voltarTopo:hover {
+  background-color: var(--coral-vibrante);
+}
+

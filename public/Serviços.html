@@ -67,6 +67,21 @@
   </div>
 </section>
 
+<button id="voltarTopo" onclick="window.scrollTo({top:0, behavior:'smooth'})">Voltar ao topo</button>
+
+<script>
+  const botaoTopo = document.getElementById("voltarTopo");
+
+  window.onscroll = function () {
+    if (document.documentElement.scrollTop > 200) {
+      botaoTopo.style.display = "block";
+    } else {
+      botaoTopo.style.display = "none";
+    }
+  };
+</script>
+
+
     <footer>
       <p>&copy; 2025 Salão Fios & Formas. <br>Todos os direitos reservados.</p>
     </footer>
